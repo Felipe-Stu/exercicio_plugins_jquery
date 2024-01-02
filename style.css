@@ -1,0 +1,60 @@
+form {
+    flex-direction: column;
+    display: flex;
+    max-width: 310px;
+    text-align: left;
+}
+
+form div{
+    flex-direction: column;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+form input{
+    height: 25px;
+}
+
+form button{
+    background-color: rgba(255, 255, 255, 0.432);
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 45%; /* Ocupar a largura total da div */
+    padding: 12px;
+}
+
+form button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+form text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contato > div::before {
+    content: attr(data-label);
+    font-weight: bold; /* Adiciona negrito */
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contato div {
+    margin-bottom: 15px;
+}
+
+#contato input, #contato textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#despedida {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinhar itens ao topo */
+}
